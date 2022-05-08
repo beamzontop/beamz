@@ -2,12 +2,16 @@
 function openNav() {
   document.getElementById("mySidebar").style.width = "290px";
   document.getElementById("main").style.marginLeft = "290px";
+  
+  return;
 }
 
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
+
+  return;
 }
 
 

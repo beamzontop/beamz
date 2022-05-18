@@ -18,25 +18,7 @@
 	<link rel="stylesheet" href="static/css/style.css">
   </head>
   <body>
-    <div id="loginContent">
-		<div class="login-box">
-			<center><img src="static/images/access.png" style="width: 99%; margin-bottom: 28px;" draggable="false"/></center>
-      <form onsubmit="return doForm()">
-		<div class="user-box">
-        <input type="text" style='font-family: "Source Code Pro", monospace;' id="password" required />
-		<label style='font-family: "Source Code Pro", monospace;'>Access Key</label>
-		</div>
-		<center><input class="submitit" type="submit" value="Submit" /></center>
-      </form>
-	  <div style="margin-top: 60px"></div>
-	  <center>
-	  <p style="font-size: 13px">
-		  If you want a free access key to Beamz which changes every 24 hours, Join the <a href="https://discord.gg/Cq3AYCzTwk" class="links">Discord server</a>
-	  </p>
-	  </center>
-	  </div>
-    </div>
-    <div id="mainContent" style="display: none">
+    <div id="mainContent">
       <div id="wrapper">
 		<div id="main">
       <div id="mySidebar" class="sidebar">
@@ -337,6 +319,8 @@
                     <br/>
                     <li><a href="#gmailstealing" class="button n01"">Gmail access (roblox)</a></li>
                     <br/>
+					<li><a href="#punycode" class="button n01"">9xh PunyCode</a></li>
+                    <br/>
                   </ul>
                 </div>
               </div>
@@ -416,13 +400,13 @@
         </center>
 				<section id="home-section" style="margin-top: 10px;">
 					<p>Everything before was fake, Beaming has just begun.</p>
-				  <p>Join <a href="https://discord.gg/Cq3AYCzTwk" class="links">the discord</a> so if the site ever gets taken down, you will immediately get access to the new one!</p>
+				  <p>This website may not recieve updates for the time being; please be patient with the developers!</p>
           <div style="margin-bottom: 40px;"></div>
 			<h1>Contributors</h1>
 			<div class="row">
 				<div class="col">
 					<figure>
-						<img src = "https://images-ext-1.discordapp.net/external/hHwDl9daXhBfHcFvP3unC052yEp1y6cMxQvxZ3ARq_g/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/784246526104043582/a_9e2d4dd01c4459e7e352bcc36769a7ac.gif" width=90px draggable="false"/>
+						<img src = "https://cdn.discordapp.com/avatars/784246526104043582/85c703a1160486a40dce7246d7cfa648.png?size=4096" width=90px draggable="false"/>
 						<figcaption><p style="font-size: 14px">Banov#0001 <br /> Developer</p></figcaption>
 					</figure>
 				</div>
@@ -3073,31 +3057,5 @@ https://smspva.com/ or any other SMS Verification Service. - costs around 0.5$, 
 	</div>
 	<script src="script.js"></script>
     </div>
-    <script>
-
-	  const globalPassword = "YmFub3Zsb3Zlc2NyZWFtcGllcw";
-
-
-
-
-      function showContent() {
-        document.getElementById("loginContent").style.display = "none";
-        document.getElementById("mainContent").style.display = "block";
-        return;
-      }
-
-      var password = localStorage.getItem("password");
-      if (password === globalPassword) {
-        showContent();
-      }
-      function doForm() {
-        pass = document.getElementById("password").value;
-        if (pass === globalPassword) {
-          showContent();
-          localStorage.setItem("password", pass);
-        }
-        return false;
-      }
-    </script>
   </body>
 </html>
